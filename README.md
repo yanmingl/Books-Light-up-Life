@@ -32,3 +32,28 @@ July 25, 2022
 		class detection accuracy. However, it is also need to be investigated further as we can not directly to ask the 
 		classifier when a neuron is remove instead we just see the out-box/result/accuracy decrease. To solve the latter 
 		problem, we may move forword to the unsupervised setting.
+
+July 26, 2022
+- 41/194 for 20 pages on 1.2 dissecting a generator, 1.3 what GAN can not see or generate, 1.4 rewrite the rules, 1.5 summary, 
+	2. literature review, 2.1 surogate models or other explanatory models 2.2 salience mothods
+- Since we are not sure that the supervised trainning will influence the expression of causality from activatation/removal of
+	 conceptual neurons to objective dimission or not, so we seek help from unsupervised learning. We do similar research 
+	 on generative adervisal network to detect the exsitence of conceptual models, which maps the concepts to neurons. 
+	 For each neuron, we visualize its vision area and compare it with all concepts area upon generated image using semantic
+	 segmentation, then we determine which concept does the neuron prefer most. For all concepts, we can calculte the number
+	 of firing neurons. We found concepts in neural network. It means that there is some correlations between these two dimensions, 
+	 while causuality test will conducted for further confirmation. The results demenstrate that removal/addition of 'mother' 
+	 neurons affects the suppression/generation of object class. To dig deeper, two fascinating things can be found 1) after 
+	 removing the trees in front of the buildings, then the original hidden building appear 2) the object exsistence are 
+	 influenced by the rules between the object and background, that is to say, if we activate one door neuron in the sky area,
+	 the door does not appear. Based on our understanding of DNN, a tool is invented for create realistic images by adding or 
+	 dropping elements in the graphs. For rules, there are another two puzzles, 1) how can we quantify that the GAN can not 
+	 draw, 2) is that possible to understand how the rule works? To solve the first proble, we figured out two ways, 1) compare
+	 the distribution between the original image and the generated one for concepts 2) plot those two image and segmentation to
+	 see the difference. As for rules, so far, we know that the neurons are responsible for processing, how they cooperate is 
+	 a the domain of rules. Knowing rules means to obtain the weights. Taking the task, repalcing the pointy roof to leafy trees
+	 as an example, a single layer-associate memory layer is introduced. This weight is a rank-one sub-space for dictionary 
+	 transformation. Another UI for putting new features from one exsiting image to the modified one is developed with the 
+	 understading of rules. To sum up, 3 tools are designed on intepretable GAN. For the following notes, we will summarize the 
+	 up-to-state research method on intepretability of deep nerual network. 
+	 
